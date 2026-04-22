@@ -1,20 +1,19 @@
 using Soenneker.ngrok.OpenApiClientUtil.Abstract;
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.ngrok.OpenApiClientUtil.Tests;
 
-[Collection("Collection")]
-public sealed class ngrokOpenApiClientUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public sealed class ngrokOpenApiClientUtilTests : HostedUnitTest
 {
     private readonly IngrokOpenApiClientUtil _openapiclientutil;
 
-    public ngrokOpenApiClientUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public ngrokOpenApiClientUtilTests(Host host) : base(host)
     {
         _openapiclientutil = Resolve<IngrokOpenApiClientUtil>(true);
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
