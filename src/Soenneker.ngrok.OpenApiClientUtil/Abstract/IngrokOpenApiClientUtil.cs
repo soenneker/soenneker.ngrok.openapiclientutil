@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.ngrok.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a cached ngrok API client backed by the configured HTTP provider.
 /// </summary>
-public interface IngrokOpenApiClientUtil: IDisposable, IAsyncDisposable
+public interface IngrokOpenApiClientUtil : IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the cached ngrok client, creating it on the first call.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <returns>The configured ngrok client.</returns>
     ValueTask<NgrokOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
