@@ -41,7 +41,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.ngrok.HttpClients" Version="4.0.101" />
+        <PackageReference Include="Soenneker.ngrok.HttpClients" Version="4.0.103" />
         <PackageReference Include="Soenneker.ngrok.OpenApiClient" Version="4.0.31" />
         <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.830" />
     </ItemGroup>
