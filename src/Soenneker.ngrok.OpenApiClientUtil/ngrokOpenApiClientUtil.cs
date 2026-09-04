@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.ngrok.OpenApiClientUtil;
 
+/// <inheritdoc cref="IngrokOpenApiClientUtil" />
 public sealed class ngrokOpenApiClientUtil : IngrokOpenApiClientUtil
 {
     private readonly AsyncSingleton<NgrokOpenApiClient> _client;
