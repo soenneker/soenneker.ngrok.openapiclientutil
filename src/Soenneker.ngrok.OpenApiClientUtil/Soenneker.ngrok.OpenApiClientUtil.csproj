@@ -45,6 +45,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.ngrok.HttpClients" Version="11.0.180" />
-        <PackageReference Include="Soenneker.ngrok.OpenApiClient" Version="11.0.64" />
+        <PackageReference Include="Soenneker.ngrok.OpenApiClient" Version="11.0.65" />
     </ItemGroup>
 </Project>
